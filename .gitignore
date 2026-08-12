@@ -1,0 +1,12 @@
+# Generated per-bank builds — regenerate with `python3 generate.py --all`
+generated/
+# venv / node / build artifacts inside template
+**/.venv/
+**/node_modules/
+**/dist/
+**/webroot/
+**/__pycache__/
+*.pyc
+.DS_Store
+**/.databricks/
+**/.pytest_cache/

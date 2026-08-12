@@ -1,0 +1,34 @@
+{
+  "bank_key": "nedbank",
+  "display_name": "Nedbank",
+  "legal_name": "Nedbank Limited",
+  "goaml_entity_id": "NEDBANK-ZA",
+  "schema_prefix": "nedbank_fraud_aml",
+  "bundle_name": "nedbank_sentinel",
+  "app_name": "nedbank-fraud-aml",
+  "email_domain": "demo.nedbank.co.za",
+  "positioning": "mass-market SA retail bank (MiGoals / Nedbank Money app)",
+  "logo": "tile-N",
+  "palette": {
+    "navy": "#044a33", "navy_2": "#013525", "accent": "#006341", "accent_2": "#7fae97",
+    "canvas": "#f4f7f5", "text": "#143a2c", "muted": "#5f7369", "border": "#dde7e1",
+    "graph_customer": "#006341", "graph_account": "#7fae97", "graph_counterparty": "#044a33", "graph_other": "#aecabb",
+    "chart_teal": "#006341", "chart_gold": "#0a7a53",
+    "dark_navy": "#e6efe9", "dark_accent": "#3fae7e"
+  },
+  "landing_stats": [
+    { "n": "R1bn+", "l": "Fraud Losses Prevented" },
+    { "n": "12M+", "l": "Nedbank Clients Protected" }
+  ],
+  "products": {
+    "transact": "migoals_transact", "entry": "pay_as_you_use", "active": "migoals_plus",
+    "plus": "migoals_premium", "app": "nedbank_money_app", "device_prefix": "NBMONEY-"
+  },
+  "ids": {
+    "warehouse_id": "eeee8ab1661ce350",
+    "genie_space": "01f1962af9e61338a2c438fe01a7f352",
+    "dashboard_id": "01f1962b09fc173296fdc15c62aefb4e",
+    "host": "https://fevm-elexon-app-for-settlement-acc.cloud.databricksapps.com",
+    "app_url": "https://nedbank-fraud-aml-7474654808133980.aws.databricksapps.com"
+  }
+}

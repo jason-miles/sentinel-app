@@ -1,0 +1,34 @@
+{
+  "bank_key": "capitec",
+  "display_name": "Capitec",
+  "legal_name": "Capitec Bank Limited",
+  "goaml_entity_id": "CAPITEC-ZA",
+  "schema_prefix": "capitec_fraud_aml",
+  "bundle_name": "capitec_sentinel",
+  "app_name": "capitec-fraud-aml",
+  "email_domain": "demo.capitecbank.co.za",
+  "positioning": "mass-market SA retail bank (Global One)",
+  "logo": "tile-C",
+  "palette": {
+    "navy": "#003b5c", "navy_2": "#002b44", "accent": "#e2001a", "accent_2": "#4a90b9",
+    "canvas": "#f4f7fa", "text": "#0f2536", "muted": "#5b6b78", "border": "#dbe3ea",
+    "graph_customer": "#003b5c", "graph_account": "#4a90b9", "graph_counterparty": "#0a5580", "graph_other": "#aecbde",
+    "chart_teal": "#003b5c", "chart_gold": "#e2001a",
+    "dark_navy": "#e6eff6", "dark_accent": "#ff3b52"
+  },
+  "landing_stats": [
+    { "n": "R673m+", "l": "Fraud Losses Prevented" },
+    { "n": "26M", "l": "Global One Clients Protected" }
+  ],
+  "products": {
+    "transact": "global_one_transact", "entry": "global_one_entry", "active": "global_one_active",
+    "plus": "global_one_plus", "app": "global_one_app", "device_prefix": "GO-APP-"
+  },
+  "ids": {
+    "warehouse_id": "10fbc0a24b3e418c",
+    "genie_space": "01f194ad316e127191fec45fdd5fb6bc",
+    "dashboard_id": "01f194ad41b618fa8342f8a851b45507",
+    "host": "https://fevm-elexon-app-for-settlement-acc.cloud.databricksapps.com",
+    "app_url": "https://capitec-fraud-aml-7474654808133980.aws.databricksapps.com"
+  }
+}

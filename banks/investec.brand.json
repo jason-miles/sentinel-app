@@ -1,0 +1,34 @@
+{
+  "bank_key": "investec",
+  "display_name": "Investec",
+  "legal_name": "Investec Bank Limited",
+  "goaml_entity_id": "INVESTEC-ZA",
+  "schema_prefix": "investec_fraud_aml",
+  "bundle_name": "investec_sentinel",
+  "app_name": "investec-fraud-aml",
+  "email_domain": "demo.investec.co.za",
+  "positioning": "SA private & specialist bank (high-net-worth)",
+  "logo": "crosshair",
+  "palette": {
+    "navy": "#30384a", "navy_2": "#262d3c", "accent": "#c9a24b", "accent_2": "#8aa0b6",
+    "canvas": "#f6f6f4", "text": "#30384a", "muted": "#6a7183", "border": "#e4e4de",
+    "graph_customer": "#30384a", "graph_account": "#8aa0b6", "graph_counterparty": "#c9a24b", "graph_other": "#aeb6c4",
+    "chart_teal": "#30384a", "chart_gold": "#c9a24b",
+    "dark_navy": "#e8ecf3", "dark_accent": "#d8b45e"
+  },
+  "landing_stats": [
+    { "n": "R500m+", "l": "Fraud Losses Prevented" },
+    { "n": "R600bn+", "l": "Client Assets Under Management" }
+  ],
+  "products": {
+    "transact": "private_bank_account", "entry": "private_bank", "active": "private_client",
+    "plus": "wealth", "app": "investec_app", "device_prefix": "INVAPP-"
+  },
+  "ids": {
+    "warehouse_id": "e227fa247dd5bedd",
+    "genie_space": "01f1964fc35c10509e628e538ab4c3f8",
+    "dashboard_id": "01f1843c859f1acb97f76971d642826c",
+    "host": "https://fevm-elexon-app-for-settlement-acc.cloud.databricksapps.com",
+    "app_url": "https://investec-fraud-aml-7474654808133980.aws.databricksapps.com"
+  }
+}
