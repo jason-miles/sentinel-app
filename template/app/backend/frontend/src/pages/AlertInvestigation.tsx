@@ -45,6 +45,13 @@ export function AlertInvestigation() {
     setTimeout(() => setSimMsg(""), 9000);
   }
 
+  // Story Mode fires this so the "real-time detection" beat actually happens on screen.
+  useEffect(() => {
+    const h = () => { simulate(); };
+    window.addEventListener("sentinel:sim-live-alert", h);
+    return () => window.removeEventListener("sentinel:sim-live-alert", h);
+  }, [current, fPriority, fScenario]);
+
   // Initial load (with spinner) whenever persona or filters change.
   const load = () => {
     if (!current) return;
