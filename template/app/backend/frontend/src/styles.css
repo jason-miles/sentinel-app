@@ -145,7 +145,6 @@ tr.clickable:hover { background: var(--canvas); cursor: pointer; }
 .kv { display: flex; justify-content: space-between; padding: 9px 0; border-bottom: 1px solid var(--border); }
 .kv .k { color: var(--muted); }
 .muted { color: var(--muted); } .mono { font-family: ui-monospace, Menlo, monospace; font-size: 12px; }
-.loading { color: var(--muted); padding: 46px; text-align: center; }
 
 /* ── Skeleton loaders ─────────────────────────────────────────────────────
    Structured placeholders that mirror the final layout so a loading page reads
