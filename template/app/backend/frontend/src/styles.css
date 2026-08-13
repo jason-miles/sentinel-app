@@ -146,6 +146,27 @@ tr.clickable:hover { background: var(--canvas); cursor: pointer; }
 .kv .k { color: var(--muted); }
 .muted { color: var(--muted); } .mono { font-family: ui-monospace, Menlo, monospace; font-size: 12px; }
 .loading { color: var(--muted); padding: 46px; text-align: center; }
+
+/* ── Skeleton loaders ─────────────────────────────────────────────────────
+   Structured placeholders that mirror the final layout so a loading page reads
+   as "content arriving" rather than a blank/frozen screen. Respects reduced motion. */
+.skel { position: relative; overflow: hidden; background: color-mix(in srgb, var(--border) 60%, transparent);
+  border-radius: 6px; }
+.skel::after { content: ""; position: absolute; inset: 0; transform: translateX(-100%);
+  background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--panel) 70%, transparent), transparent);
+  animation: skel-shimmer 1.25s infinite; }
+@keyframes skel-shimmer { 100% { transform: translateX(100%); } }
+@media (prefers-reduced-motion: reduce) { .skel::after { animation: none; } }
+.skel-line { height: 12px; margin: 8px 0; }
+.skel-kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 1px;
+  margin-bottom: 26px; background: var(--border); border: 1px solid var(--border);
+  border-radius: var(--radius); overflow: hidden; }
+.skel-kpi { background: var(--panel); padding: 20px 18px; display: flex; flex-direction: column;
+  align-items: center; gap: 12px; }
+.skel-panel { background: var(--panel); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 22px 24px; margin-bottom: 20px; }
+.skel-row { height: 40px; margin: 6px 0; border-radius: 6px; }
+.skel-chart { height: 260px; border-radius: 8px; }
 input, textarea, select { background: var(--bg); border: 1px solid var(--border); color: var(--text); border-radius: var(--radius); padding: 10px 12px; font-size: 13px; font-family: inherit; }
 input:focus, textarea:focus, select:focus { outline: none; border-color: var(--navy); }
 .explain { background: var(--canvas); border-left: 2px solid var(--accent); padding: 14px 16px; border-radius: 2px; line-height: 1.6; }
