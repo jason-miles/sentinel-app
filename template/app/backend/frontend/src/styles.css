@@ -167,6 +167,12 @@ tr.clickable:hover { background: var(--canvas); cursor: pointer; }
   padding: 22px 24px; margin-bottom: 20px; }
 .skel-row { height: 40px; margin: 6px 0; border-radius: 6px; }
 .skel-chart { height: 260px; border-radius: 8px; }
+
+/* Blinking caret shown while an AI panel streams tokens in. */
+.stream-caret { display: inline-block; width: 7px; height: 1em; margin-left: 2px;
+  vertical-align: text-bottom; background: var(--accent); animation: caret-blink 1s step-end infinite; }
+@keyframes caret-blink { 50% { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .stream-caret { animation: none; } }
 input, textarea, select { background: var(--bg); border: 1px solid var(--border); color: var(--text); border-radius: var(--radius); padding: 10px 12px; font-size: 13px; font-family: inherit; }
 input:focus, textarea:focus, select:focus { outline: none; border-color: var(--navy); }
 .explain { background: var(--canvas); border-left: 2px solid var(--accent); padding: 14px 16px; border-radius: 2px; line-height: 1.6; }
